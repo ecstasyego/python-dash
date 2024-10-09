@@ -4,6 +4,18 @@
 python -m visdom.server -p 8097
 ```
 
+```python
+import numpy as np
+import pandas as pd
+import visdom
+
+y = pd.Series(np.random.normal(size=1000), index=pd.date_range(end='00:00:00', periods=1000, freq='D'))
+xtickvals=(y.index.astype(int) // 10^9).tolist()
+xticklabels=y.index.strftime('%Y:%m:%d').tolist()
+
+vis = visdom.Visdom()
+vis.line(Y=y.values, X=y.index.astype(int) // 10^9, opts=dict(xtickvals=xtickvals[::100], xticklabels=xticklabels[::100]))
+```
 
 ## Line
 ### One exploratory data dimension
@@ -30,6 +42,7 @@ for i, y in enumerate(np.random.normal(size=(1000, 1))): # data shape: 2d-array
     vis.line(Y=y, X=np.array([i]), win=window, update='append') # Y: 1d-array, X: 1d-array
 vis.close()
 ```
+
 
 ### One more exploratory data dimension
 ```python
