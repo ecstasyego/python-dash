@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
 
 ## API Reference
-- https://dash.plotly.com/dash-html-components
+https://dash.plotly.com/dash-html-components
 
 ```python
 import dash
