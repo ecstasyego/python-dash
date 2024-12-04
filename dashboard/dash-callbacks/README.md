@@ -18,7 +18,7 @@ app.layout = html.Div([dcc.Location(id="url"), main])
 
 @app.callback(Output("output", "children"), Input("input", "value"))
 def callback_func(value):
-    # value of input to children of output
+    # value[parameter] of input[id]   >   children[parameter] of output[id]
     return value
 
 if __name__ == '__main__':
