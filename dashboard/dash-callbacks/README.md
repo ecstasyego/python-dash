@@ -18,8 +18,7 @@ app.layout = html.Div([dcc.Location(id="url"), main])
 
 @app.callback(Output("output", "children"), Input("input", "value"))
 def callback_func(value):
-    # from value[parameter] of input[id]   >   to children[parameter] of output[id]
-    return value
+    return value # html.P(children=value, id="output")
 
 if __name__ == '__main__':
     app.run_server(host="127.0.0.1", port='8050', debug=True)
