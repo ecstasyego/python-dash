@@ -22,7 +22,7 @@ if __name__ == '__main__':
 
 
 ## API Reference
-- https://dash-bootstrap-components.opensource.faculty.ai/docs/components/
+https://dash-bootstrap-components.opensource.faculty.ai/docs/components/
 
 ```python
 import dash_bootstrap_components as dbc
