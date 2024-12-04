@@ -1,4 +1,3 @@
-- https://dash-bootstrap-components.opensource.faculty.ai/docs/components/
 
 ```python
 import dash
@@ -23,4 +22,13 @@ if __name__ == '__main__':
 
 
 ## API Reference
+- https://dash-bootstrap-components.opensource.faculty.ai/docs/components/
 
+```python
+import dash_bootstrap_components as dbc
+help(dbc.Nav)
+```
+
+- Nav(children=None, id=undefined, style=undefined, class_name=undefined, className=undefined, key=undefined, pills=undefined, card=undefined, fill=undefined, justified=undefined, vertical=undefined, horizontal=undefined, navbar=undefined, navbar_scroll=undefined, loading_state=undefined, **kwargs)
+- Button(children=None, id=undefined, class_name=undefined, className=undefined, style=undefined, key=undefined, href=undefined, external_link=undefined, n_clicks=undefined, n_clicks_timestamp=undefined, active=undefined, color=undefined, disabled=undefined, size=undefined, title=undefined, outline=undefined, loading_state=undefined, target=undefined, type=undefined, download=undefined, name=undefined, value=undefined, rel=undefined, **kwargs)
+- Alert(children=None, id=undefined, style=undefined, class_name=undefined, className=undefined, key=undefined, color=undefined, is_open=undefined, fade=undefined, dismissable=undefined, duration=undefined, loading_state=undefined, persistence=undefined, persisted_props=undefined, persistence_type=undefined, **kwargs)
