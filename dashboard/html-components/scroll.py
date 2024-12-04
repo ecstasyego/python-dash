@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 from dash import html
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+app.title = "TITLE"
 sidebar = html.Div(
     children=[
         html.H2("SIDEBAR"),
