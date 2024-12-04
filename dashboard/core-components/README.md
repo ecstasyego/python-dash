@@ -1,4 +1,3 @@
-- https://dash.plotly.com/dash-core-components
 
 ```python
 import dash
@@ -23,4 +22,17 @@ if __name__ == '__main__':
 
 
 ## API Reference
+- https://dash.plotly.com/dash-core-components
+
+```python
+import dash
+help(dash.dcc.Markdown)
+```
+
+- Markdown(children=None, id=undefined, className=undefined, mathjax=undefined, dangerously_allow_html=undefined, link_target=undefined, dedent=undefined, highlight_config=undefined, loading_state=undefined, style=undefined, **kwargs)
+- Link(children=None, href=required, target=undefined, refresh=undefined, title=undefined, className=undefined, style=undefined, id=undefined, loading_state=undefined, **kwargs)
+- Location(id=required, pathname=undefined, search=undefined, hash=undefined, href=undefined, refresh=undefined, **kwargs)
+- Tabs(children=None, id=undefined, value=undefined, className=undefined, content_className=undefined, parent_className=undefined, style=undefined, parent_style=undefined, content_style=undefined, vertical=undefined, mobile_breakpoint=undefined, colors=undefined, loading_state=undefined, persistence=undefined, persisted_props=undefined, persistence_type=undefined, **kwargs)
+- Tab(children=None, id=undefined, label=undefined, value=undefined, disabled=undefined, disabled_style=undefined, disabled_className=undefined, className=undefined, selected_className=undefined, style=undefined, selected_style=undefined, loading_state=undefined, **kwargs)
+
 
