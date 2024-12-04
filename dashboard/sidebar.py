@@ -5,9 +5,9 @@ from dash.dependencies import Input, Output
 
 app = dash.Dash(suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "TITLE"
-sidebar = html.Div([html.H2(html.A("Ailever", href="/"), className="display-4"),
+sidebar = html.Div([html.H2(html.A("PROJECT", href="/"), className="display-4"),
                     html.Hr(),
-                    html.P("Promulgate values for a better tomorrow", className="lead"),
+                    html.P("description", className="lead"),
                     dbc.Nav([dbc.NavLink("Page 1", href="/page1", id="page1"),
                              dbc.NavLink("Page 2", href="/page2", id="page2"),
                              dbc.NavLink("Page 3", href="/page3", id="page3")], vertical=True, pills=True)])
