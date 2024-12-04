@@ -27,3 +27,11 @@ if __name__ == '__main__':
 - [https://github.com/ecstasyego/python-dash/tree/main/dashboard/html-components](https://github.com/ecstasyego/python-dash/blob/main/dashboard/html-components/README.md)
 - [https://github.com/ecstasyego/python-dash/blob/main/dashboard/bootstrap-components](https://github.com/ecstasyego/python-dash/blob/main/dashboard/bootstrap-components/README.md)
 
+`dash.Input`
+```python
+Input(component_id, component_property)
+```
+`dash.Output`
+```python
+Output(component_id, component_property, allow_duplicate=False)
+```
