@@ -62,7 +62,7 @@ contents['page']['tab'] = [dbc.Row([dbc.Col(O['T,0,0'], width=6), dbc.Col(O['T,0
 page_layouts['page'] = dbc.Tabs([dbc.Tab(dbc.Card(dbc.CardBody(contents['page']['tab'])), label="AILEVER1", disabled=False)])
 main = html.Div([html.H2(html.A('PROJECT TITLE', href="/")),
                  html.H6('Promulgate values for a better tomorrow'),
-                 html.Div([dbc.Button("Ailever", color="secondary", href='https://github.com/ailever/ailever/wiki'),
+                 html.Div([dbc.Button("TASK", color="secondary", href='https://github.com/ailever/ailever/wiki'),
                            dbc.Button("Real-Time Analysis", id='real-time', color="secondary", href=config['visdom-server']+':'+config['visdom-port'])]),
                  html.P(id='visdom-server'),
                  html.Br()])
