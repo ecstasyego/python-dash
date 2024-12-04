@@ -51,7 +51,7 @@ contents['page']['tab'] = [dbc.Row([dbc.Col(C['T,0,0'], width=6), dbc.Col(C['T,0
 page_layouts['page'] = dbc.Tabs([dbc.Tab(dbc.Card(dbc.CardBody(contents['page']['tab'])), label="PAGE1", disabled=False)])
 main = html.Div([html.H2(html.A('PROJECT', href="/")),
                  html.H6('description'),
-                 html.Div([dbc.Button("Ailever", color="secondary", href='https://github.com/ailever/ailever/wiki')]),
+                 html.Div([dbc.Button("TASK", color="secondary", href='https://github.com/ailever/ailever/wiki')]),
                  html.Br()])
 app.layout = html.Div([main, page_layouts['page']])
 if __name__ == '__main__':
