@@ -30,6 +30,7 @@ help(dash.html.Div)
 
 - Div(children=None, id=undefined, n_clicks=undefined, n_clicks_timestamp=undefined, disable_n_clicks=undefined, key=undefined, accessKey=undefined, className=undefined, contentEditable=undefined, dir=undefined, draggable=undefined, hidden=undefined, lang=undefined, role=undefined, spellCheck=undefined, style=undefined, tabIndex=undefined, title=undefined, loading_state=undefined, **kwargs)
 - P(children=None, id=undefined, n_clicks=undefined, n_clicks_timestamp=undefined, disable_n_clicks=undefined, key=undefined, accessKey=undefined, className=undefined, contentEditable=undefined, dir=undefined, draggable=undefined, hidden=undefined, lang=undefined, role=undefined, spellCheck=undefined, style=undefined, tabIndex=undefined, title=undefined, loading_state=undefined, **kwargs)
-- 
+- H2(children=None, id=undefined, n_clicks=undefined, n_clicks_timestamp=undefined, disable_n_clicks=undefined, key=undefined, accessKey=undefined, className=undefined, contentEditable=undefined, dir=undefined, draggable=undefined, hidden=undefined, lang=undefined, role=undefined, spellCheck=undefined, style=undefined, tabIndex=undefined, title=undefined, loading_state=undefined, **kwargs)
+- Hr(children=None, id=undefined, n_clicks=undefined, n_clicks_timestamp=undefined, disable_n_clicks=undefined, key=undefined, accessKey=undefined, className=undefined, contentEditable=undefined, dir=undefined, draggable=undefined, hidden=undefined, lang=undefined, role=undefined, spellCheck=undefined, style=undefined, tabIndex=undefined, title=undefined, loading_state=undefined, **kwargs)
 
 
