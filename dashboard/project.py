@@ -8,6 +8,7 @@ config = {}
 config['dash-server'] = '127.0.0.1'
 config['dash-port'] = '8050'
 app = dash.Dash(suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app.title = "TITLE"
 ################################## CONFIG ##################################
 ################################## CODEBLOCK ##################################
 
