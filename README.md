@@ -9,6 +9,7 @@ import dash
 from dash import dcc, html
 
 app = dash.Dash(__name__)
+app.title = "APP PAGE TITLE"
 app.layout = html.Div([
     html.H1("Hello, Dash!"),
     dcc.Graph(
