@@ -25,6 +25,8 @@ if __name__ == '__main__':
 https://dash-bootstrap-components.opensource.faculty.ai/docs/components/
 
 ```python
+# 'Accordion', 'AccordionItem', 'Alert', 'Badge', 'Breadcrumb', 'Button', 'ButtonGroup', 'Card', 'CardBody', 'CardFooter', 'CardGroup', 'CardHeader', 'CardImg', 'CardImgOverlay', 'CardLink', 'Carousel', 'Checkbox', 'Checklist', 'Col', 'Collapse', 'Container', 'DropdownMenu', 'DropdownMenuItem', 'Fade', 'Form', 'FormFeedback', 'FormFloating', 'FormText', 'Input', 'InputGroup', 'InputGroupText', 'Label', 'ListGroup', 'ListGroupItem', 'Modal', 'ModalBody', 'ModalFooter', 'ModalHeader', 'ModalTitle', 'Nav', 'NavItem', 'NavLink', 'Navbar', 'NavbarBrand', 'NavbarSimple', 'NavbarToggler', 'Offcanvas', 'Pagination', 'Placeholder', 'Popover', 'PopoverBody', 'PopoverHeader', 'Progress', 'RadioButton', 'RadioItems', 'Row', 'Select', 'Spinner', 'Stack', 'Switch', 'Tab', 'Table', 'Tabs', 'Textarea', 'Toast', 'Tooltip'
+
 import dash_bootstrap_components as dbc
 help(dbc.Nav)
 ```
