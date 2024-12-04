@@ -21,7 +21,7 @@ if __name__ == '__main__':
 ```
 
 
-## API Reference: [To Callback](https://github.com/ecstasyego/python-dash/blob/main/dashboard/dash-callbacks/README.md)
+## API Reference: [To Callback](https://github.com/ecstasyego/python-dash/blob/main/dashboard/dash-callbacks/README.md#api-reference)
 https://dash.plotly.com/dash-html-components
 
 ```python
