@@ -1,3 +1,10 @@
+## Guide
+- https://dash.plotly.com/basic-callbacks
+- https://dash.plotly.com/dash-core-components
+- https://dash.plotly.com/dash-html-components
+- https://dash-bootstrap-components.opensource.faculty.ai/docs/components
+  
+
 ## Installation
 
 ```bash
