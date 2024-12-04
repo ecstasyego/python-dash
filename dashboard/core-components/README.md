@@ -25,6 +25,8 @@ if __name__ == '__main__':
 https://dash.plotly.com/dash-core-components
 
 ```python
+# 'Checklist', 'Clipboard', 'ConfirmDialog', 'ConfirmDialogProvider', 'DatePickerRange', 'DatePickerSingle', 'Download', 'Dropdown', 'Geolocation', 'Graph', 'Input', 'Interval', 'Link', 'Loading', 'Location', 'LogoutButton', 'Markdown', 'RadioItems', 'RangeSlider', 'Slider', 'Store', 'Tab', 'Tabs', 'Textarea', 'Tooltip', 'Upload'
+
 import dash
 help(dash.dcc.Markdown)
 ```
