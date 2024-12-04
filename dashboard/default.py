@@ -1,14 +1,18 @@
 import dash
-from dash import dcc, html
+import dash_bootstrap_components as dbc
+from dash import html, dcc
+from dash.dependencies import Input, Output
 
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-app = dash.Dash(__name__, suppress_callback_exceptions=True, external_stylesheets=external_stylesheets)
+app = dash.Dash(suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "TITLE"
-app.layout = dcc.Markdown('''
-## TITLE
-- contents 1
-- contents 2
-''')
+
+# CONTENTS
+main = html.Div([html.H2(html.A("PROJECT", href="/")),
+                 html.H6('description'),
+                 html.Hr(),
+                 dcc.Markdown("Hello, World!"),
+                 ])
+app.layout = html.Div([dcc.Location(id="url"), main])
 
 if __name__ == '__main__':
     app.run_server(host="127.0.0.1", port='8050', debug=True)
