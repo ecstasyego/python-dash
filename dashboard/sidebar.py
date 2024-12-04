@@ -8,9 +8,9 @@ app.title = "TITLE"
 sidebar = html.Div([html.H2(html.A("PROJECT", href="/"), className="display-4"),
                     html.Hr(),
                     html.P("description", className="lead"),
-                    dbc.Nav([dbc.NavLink("Page 1", href="/page1", id="page1"),
-                             dbc.NavLink("Page 2", href="/page2", id="page2"),
-                             dbc.NavLink("Page 3", href="/page3", id="page3")], vertical=True, pills=True)])
+                    dbc.Nav([dbc.NavLink("Page 1", href="/page1", id="page1", active=False),
+                             dbc.NavLink("Page 2", href="/page2", id="page2", active=False),
+                             dbc.NavLink("Page 3", href="/page3", id="page3", active=False)], vertical=True, pills=True)])
 content = html.Div(id="page-content")
 main = dbc.Row([dbc.Col(sidebar, width=2), dbc.Col(content, width=10)])
 app.layout = html.Div([dcc.Location(id="url"), main])
@@ -25,7 +25,7 @@ contents['page3'] = html.Div('Page 3')
               Input("url", "pathname"))
 def toggle_active_links(pathname):
     if pathname == "/":
-        return True, False, False
+        return False, False, False
     return [pathname == f"/page{i}" for i in range(1, 4)]
 
 @app.callback(Output("page-content", "children"),
@@ -41,5 +41,3 @@ def render_page_content(pathname):
 
 if __name__ == '__main__':
     app.run_server(host="127.0.0.1", port='8050', debug=True)
-
-
