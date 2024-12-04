@@ -1,5 +1,10 @@
 # python-dash
+```
+- main.py
+- assets/favicon.ico
+```
 ```python
+# main.py
 import dash
 from dash import dcc, html
 
@@ -22,6 +27,3 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 ```
   
-## favicon
-- assets/favicon.ico
-
