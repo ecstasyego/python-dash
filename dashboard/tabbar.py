@@ -4,6 +4,7 @@ from dash import html, dcc
 from dash.dependencies import Input, Output
 
 app = dash.Dash(suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app.title = "TITLE"
 main = html.Div([html.H2(html.A("PROJECT", href="/")),
                  html.H6('description')])
 contents = {}
