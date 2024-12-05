@@ -6,36 +6,17 @@
 
 ```python
 import dash
-import pandas as pd
-from dash import html, dcc
-import plotly.graph_objs as go
+from dash import dcc, html
+import plotly.graph_objects as go
 
-df = pd.DataFrame({
-    'Date': pd.date_range(start='2024-01-01', periods=10, freq='D'),
-    'Value': [10, 12, 15, 18, 17, 20, 22, 25, 28, 30]
-})
+fig = go.Figure(
+    data=[go.Bar(x=[1, 2, 3], y=[10, 11, 12])],
+    layout=go.Layout(title='Plotly Bar Chart Example')
+)
 
 app = dash.Dash(__name__)
-app.title = 'TITLE'
-app.layout = html.Div(children=[
-    dcc.Graph(
-        figure={
-            'data': [
-                go.Scatter(
-                    x=df['Date'],
-                    y=df['Value'],
-                    mode='lines+markers',
-                    name='Value'
-                )
-            ],
-            'layout': go.Layout(
-                title='Date vs Value',
-                xaxis={'title': 'Date'},
-                yaxis={'title': 'Value'}
-            )
-        }
-    )
-])
+app.title = "TITLE"
+app.layout = dcc.Graph(figure=fig)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
