@@ -36,5 +36,5 @@ help(dash.dcc.Markdown)
 - Location(id=required, pathname=undefined, search=undefined, hash=undefined, href=undefined, refresh=undefined, **kwargs)
 - Tabs(children=None, id=undefined, value=undefined, className=undefined, content_className=undefined, parent_className=undefined, style=undefined, parent_style=undefined, content_style=undefined, vertical=undefined, mobile_breakpoint=undefined, colors=undefined, loading_state=undefined, persistence=undefined, persisted_props=undefined, persistence_type=undefined, **kwargs)
 - Tab(children=None, id=undefined, label=undefined, value=undefined, disabled=undefined, disabled_style=undefined, disabled_className=undefined, className=undefined, selected_className=undefined, style=undefined, selected_style=undefined, loading_state=undefined, **kwargs)
-
+- Store(id=required, storage_type=undefined, data=undefined, clear_data=undefined, modified_timestamp=undefined, **kwargs)
 
