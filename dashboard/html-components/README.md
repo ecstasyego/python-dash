@@ -21,6 +21,16 @@ if __name__ == '__main__':
 ```
 
 
+## Style
+`margin`
+```
+margin: [margin-top] [margin-right] [margin-bottom] [margin-left];
+margin: [margin-top] [margin-left = margin-right] [margin-bottom];
+margin: [margin-top=margin-bottom] [margin-left = margin-right];
+margin: [margin-top = margin-bottom = margin-left = margin-right];
+```
+
+
 ## API Reference: [To Callback](https://github.com/ecstasyego/python-dash/blob/main/dashboard/dash-callbacks/README.md#api-reference)
 https://dash.plotly.com/dash-html-components
 
